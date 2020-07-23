@@ -1,20 +1,46 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<ion-header [translucent]="true" color="dark">
+  <ion-toolbar color="dark">
+
+   
+    <ion-item color="dark">
+      <ion-thumbnail slot="start">
+        <img src="https://www.gellog.com.br/assets/imagens/avatar.png">
+      </ion-thumbnail>
+      <ion-label>FAÇA SEU LOGUIN!</ion-label>
+    </ion-item>
+
+  
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+  
+  <ion-item color="white"> 
+    <ion-label position="stacked">Email:</ion-label>
+    <ion-icon name="log-in-outline"></ion-icon>
+    <ion-input></ion-input>
+  
+    
+  </ion-item>
+  
+  <ion-item color="white"> 
+    <ion-label position="stacked">Senha:</ion-label>
+    <ion-icon name="shield-checkmark-outline"></ion-icon>
+    <ion-input></ion-input>
+  
+    
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Lembrar-me?</ion-label>
+    <ion-toggle slot="end" value="pepperoni" checked></ion-toggle>
+    
+  </ion-item>
+
+ 
+    <ion-button color="dark" size="small">Entrar</ion-button>
+
+    <ion-button color="primary" size="small" routerLink="/cadastro"> Cadastrar-se</ion-button>
+  
+    

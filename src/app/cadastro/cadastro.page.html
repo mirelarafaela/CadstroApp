@@ -1,0 +1,89 @@
+<ion-header [translucent]="true" color="dark">
+  <ion-toolbar color="dark">
+
+   
+    <ion-item color="dark">
+      <ion-thumbnail slot="start">
+        <img src="https://www.camaraipojuca.pe.gov.br/sap/imagens/senha.png">
+      </ion-thumbnail>
+      <ion-label>CADASTRE-SE!</ion-label>
+    </ion-item>
+
+  
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <ion-item color="white"> 
+    <ion-label position="stacked">Nome:</ion-label>
+    <ion-input clearInput [(ngModel)]="nome"></ion-input>
+   
+  
+    
+  </ion-item>
+
+  <ion-item color="white"> 
+    <ion-label position="stacked">CPF:</ion-label>
+    <ion-input clearInput [(ngModel)]="cpf"></ion-input>
+  
+    
+  </ion-item>
+
+  <ion-item color="white"> 
+    <ion-label position="stacked">Data de Nascimento:</ion-label>
+    <ion-input clearInput [(ngModel)]="nascimento"></ion-input>
+  
+    
+  </ion-item>
+
+  <ion-item color="white"> 
+    <ion-label position="stacked">Email:</ion-label>
+    <ion-input clearInput [(ngModel)]="email"></ion-input>
+  
+    
+  </ion-item>
+
+  <ion-item color="white"> 
+    <ion-label position="stacked">Celular:</ion-label>
+    <ion-input clearInput [(ngModel)]="celular"></ion-input>
+  
+    
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label>Gênero</ion-label>
+    <ion-select multiple="true" cancel-text="Cancelar" ok-text="Ok">
+      <ion-select-option value="sausage">Feminino</ion-select-option>
+      <ion-select-option value="Spinach">Masculino</ion-select-option>
+    </ion-select>
+    <ion-input clearInput [(ngModel)]="genero"></ion-input>
+  </ion-item>
+
+ 
+    
+  <ion-item color="white"> 
+    <ion-label position="stacked">Senha:</ion-label>
+    <ion-input type="password" id="pass" name="password"
+    minlength="8" required clearInput [(ngModel)]="senha"></ion-input>
+  
+    
+  </ion-item>
+
+     
+  <ion-item color="white"> 
+    <ion-label position="stacked">Confirmar senha:</ion-label>
+    <ion-input type="password" id="pass" name="password"
+    minlength="8" required clearInput [(ngModel)]="confirma"></ion-input>
+  
+    
+  </ion-item>
+  
+
+  <ion-button color="dark" size="small"  (click)="formu()">Salvar</ion-button>
+  <p>{{mensagem}}</p>
+
+  <ion-button color="primary" size="small"  routerLink="/home">Voltar</ion-button>
+
+</ion-content>
